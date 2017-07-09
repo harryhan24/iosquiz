@@ -19,6 +19,11 @@
 		D483683C1DDA00C50022D257 /* QuizLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483683B1DDA00C50022D257 /* QuizLoader.swift */; };
 		D48EE8041DDB1ACB007C2C7F /* QuizAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE8031DDB1ACB007C2C7F /* QuizAlertView.swift */; };
 		D48EE8061DDB414F007C2C7F /* GenericQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE8051DDB414F007C2C7F /* GenericQuizViewController.swift */; };
+		D499D4141DDDA3DD00F89F9E /* RightWrongQuiz.plist in Resources */ = {isa = PBXBuildFile; fileRef = D499D4131DDDA3DD00F89F9E /* RightWrongQuiz.plist */; };
+		D499D4161DDDA46700F89F9E /* RightWrongQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499D4151DDDA46700F89F9E /* RightWrongQuizViewController.swift */; };
+		D499D41A1DDDBB3E00F89F9E /* background.wav in Resources */ = {isa = PBXBuildFile; fileRef = D499D4171DDDBB3E00F89F9E /* background.wav */; };
+		D499D41B1DDDBB3E00F89F9E /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D499D4181DDDBB3E00F89F9E /* correct.mp3 */; };
+		D499D41C1DDDBB3E00F89F9E /* wrong.aiff in Resources */ = {isa = PBXBuildFile; fileRef = D499D4191DDDBB3E00F89F9E /* wrong.aiff */; };
 		D4B32EAB1DD87DD00018EE6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B32EAA1DD87DD00018EE6B /* AppDelegate.swift */; };
 		D4B32EAD1DD87DD00018EE6B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B32EAC1DD87DD00018EE6B /* MenuViewController.swift */; };
 		D4B32EB01DD87DD00018EE6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B32EAE1DD87DD00018EE6B /* Main.storyboard */; };
@@ -63,6 +68,11 @@
 		D483683B1DDA00C50022D257 /* QuizLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizLoader.swift; sourceTree = "<group>"; };
 		D48EE8031DDB1ACB007C2C7F /* QuizAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAlertView.swift; sourceTree = "<group>"; };
 		D48EE8051DDB414F007C2C7F /* GenericQuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericQuizViewController.swift; sourceTree = "<group>"; };
+		D499D4131DDDA3DD00F89F9E /* RightWrongQuiz.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RightWrongQuiz.plist; sourceTree = "<group>"; };
+		D499D4151DDDA46700F89F9E /* RightWrongQuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightWrongQuizViewController.swift; sourceTree = "<group>"; };
+		D499D4171DDDBB3E00F89F9E /* background.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = background.wav; sourceTree = "<group>"; };
+		D499D4181DDDBB3E00F89F9E /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
+		D499D4191DDDBB3E00F89F9E /* wrong.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = wrong.aiff; sourceTree = "<group>"; };
 		D4B32EA71DD87DD00018EE6B /* Quiz Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B32EAA1DD87DD00018EE6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4B32EAC1DD87DD00018EE6B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +194,7 @@
 				D4B32EAC1DD87DD00018EE6B /* MenuViewController.swift */,
 				D4B32EE71DD8BF3D0018EE6B /* MultipleChoiceViewController.swift */,
 				D48EE8051DDB414F007C2C7F /* GenericQuizViewController.swift */,
+				D499D4151DDDA46700F89F9E /* RightWrongQuizViewController.swift */,
 				D48333711DDC9C6E001007AD /* EmojiQuizViewController.swift */,
 				D48333631DDC70F1001007AD /* ImageQuizViewController.swift */,
 			);
@@ -205,6 +216,9 @@
 		D4B32EDC1DD87E580018EE6B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D499D4171DDDBB3E00F89F9E /* background.wav */,
+				D499D4181DDDBB3E00F89F9E /* correct.mp3 */,
+				D499D4191DDDBB3E00F89F9E /* wrong.aiff */,
 				D4B32EE41DD8ADB90018EE6B /* Images */,
 			);
 			name = Resources;
@@ -216,6 +230,7 @@
 				D48368391DD9FC2F0022D257 /* MultipleChoice.plist */,
 				D483336D1DDC714B001007AD /* ImageQuiz.plist */,
 				D483336F1DDC9B4B001007AD /* EmojiQuiz.plist */,
+				D499D4131DDDA3DD00F89F9E /* RightWrongQuiz.plist */,
 			);
 			name = Questions;
 			sourceTree = "<group>";
@@ -344,14 +359,18 @@
 			files = (
 				D483683A1DD9FC2F0022D257 /* MultipleChoice.plist in Resources */,
 				D48333701DDC9B4B001007AD /* EmojiQuiz.plist in Resources */,
+				D499D41A1DDDBB3E00F89F9E /* background.wav in Resources */,
 				D4B32EE61DD8ADCA0018EE6B /* logo.png in Resources */,
 				D4B32EB51DD87DD00018EE6B /* LaunchScreen.storyboard in Resources */,
+				D499D41C1DDDBB3E00F89F9E /* wrong.aiff in Resources */,
+				D499D41B1DDDBB3E00F89F9E /* correct.mp3 in Resources */,
 				D483336E1DDC714B001007AD /* ImageQuiz.plist in Resources */,
 				D483336B1DDC7116001007AD /* hammer.jpg in Resources */,
 				D483336A1DDC7116001007AD /* burger.jpg in Resources */,
 				D4B32EB21DD87DD00018EE6B /* Assets.xcassets in Resources */,
 				D48333691DDC7116001007AD /* apple.jpg in Resources */,
 				D4B32EB01DD87DD00018EE6B /* Main.storyboard in Resources */,
+				D499D4141DDDA3DD00F89F9E /* RightWrongQuiz.plist in Resources */,
 				D483336C1DDC7116001007AD /* tomato.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +400,7 @@
 				D4B32EDF1DD889440018EE6B /* RoundedButton.swift in Sources */,
 				D48EE8041DDB1ACB007C2C7F /* QuizAlertView.swift in Sources */,
 				D4B32EE11DD8898E0018EE6B /* RoundedLabel.swift in Sources */,
+				D499D4161DDDA46700F89F9E /* RightWrongQuizViewController.swift in Sources */,
 				D4B32EAB1DD87DD00018EE6B /* AppDelegate.swift in Sources */,
 				D48333721DDC9C6E001007AD /* EmojiQuizViewController.swift in Sources */,
 				D4B32EE31DD8AA510018EE6B /* Constants+Extensions.swift in Sources */,
